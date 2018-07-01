@@ -1,8 +1,37 @@
-.cat-wrapper {
+body {
+    background: rebeccapurple;
+}
+
+.cat-img {
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    border: 10px solid darkorange;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+
+.cat-img:hover {
+    border-color: darkblue;
+}
+
+.clicks-number,
+.title,
+.instruction {
+    text-align: center;
+    font-family: Roboto;
+}
+
+.title {
+    margin-top: 50px;
+    font-weight: bold;
+    color: darkorange;
+}
+
+.clicks-number,
+.instruction {
+    color: white;
 }
