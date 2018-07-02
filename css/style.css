@@ -15,7 +15,7 @@ body {
 }
 
 .cat-img:hover {
-    border-color: darkblue;
+    /*border-color: darkblue;*/
 }
 
 .clicks-number,
