@@ -2,20 +2,18 @@ body {
     background: rebeccapurple;
 }
 
-.cat-img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.cat-img-two,
+.cat-img-one {
     border: 10px solid darkorange;
     border-radius: 25px;
     transition: all 0.5s;
 }
 
-.cat-img:hover {
-    /*border-color: darkblue;*/
+.first-cat,
+.second-cat {
+    float: left;
+    width: 50%;
+    text-align: center;
 }
 
 .clicks-number,
@@ -31,7 +29,12 @@ body {
     color: darkorange;
 }
 
-.clicks-number,
+.first-name,
+.second-name,
+.clicks-number-one,
+.clicks-number-two,
 .instruction {
     color: white;
+    font-size: 20px;
+    font-family: Roboto;
 }
