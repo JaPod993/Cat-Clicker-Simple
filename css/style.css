@@ -2,8 +2,7 @@ body {
     background: rebeccapurple;
 }
 
-.cat-img-two,
-.cat-img-one {
+.cats {
     border: 10px solid darkorange;
     border-radius: 25px;
     transition: all 0.5s;
@@ -29,10 +28,8 @@ body {
     color: darkorange;
 }
 
-.first-name,
-.second-name,
-.clicks-number-one,
-.clicks-number-two,
+.cat-name,
+.clicks,
 .instruction {
     color: white;
     font-size: 20px;

@@ -1,24 +1,20 @@
 document.addEventListener("DOMContentLoaded",function(){
-    const catOne = document.querySelector('.cat-img-one');
-    const catTwo = document.querySelector('.cat-img-two');
-    const numberOne = document.querySelector('.clicks-number-one');
-    const numberTwo = document.querySelector('.clicks-number-two');
-    let firstName = document.querySelector('.first-name');
-    let secondName = document.querySelector('.second-name');
-    let clickOne = 0; //number of clicks
-    let clickTwo = 0; //number of clicks
 
-    firstName.textContent = "Bonifacy";
-    secondName.textContent = "Filemon";
+    let cats = {
+        cat : document.querySelectorAll('.cats'),
+        clicks : document.querySelectorAll('.clicks'),
+        name : document.querySelectorAll('.cat-name'),
+        click : [0, 0]
+    };
 
-    catOne.addEventListener('click', function() {
-       clickOne += 1;
-       numberOne.textContent = clickOne + " clicks";
-    });
+    cats.name[0].textContent = "Bonifacy";
+    cats.name[1].textContent = "Filemon";
 
-    catTwo.addEventListener('click', function() {
-        clickTwo += 1;
-        numberTwo.textContent = clickTwo + " clicks";
-    });
+    for(let i = 0; i<=1; i++){
+        cats.cat[i].addEventListener('click', function () {
+           cats.click[i] += 1;
+           cats.clicks[i].textContent = cats.click[i] + " clicks";
+        });
+    }
+
 });
-
