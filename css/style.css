@@ -58,6 +58,7 @@ body {
     font-family: Roboto;
 }
 
+.active,
 .list:hover {
     color: darkorange;
     cursor: pointer;
@@ -67,4 +68,12 @@ body {
     color: darkblue;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.cats {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
