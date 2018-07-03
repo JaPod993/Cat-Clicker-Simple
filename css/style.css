@@ -1,5 +1,6 @@
 body {
     background: rebeccapurple;
+    margin: 0;
 }
 
 .cats {
@@ -8,11 +9,29 @@ body {
     transition: all 0.5s;
 }
 
-.first-cat,
-.second-cat {
+.cats-list {
     float: left;
-    width: 50%;
+    width: 30%;
     text-align: center;
+}
+
+.cat-wrapper {
+    background: darkblue;
+}
+
+.cat-clicker {
+    float: left;
+    text-align: center;
+    width: 70%;
+}
+
+.cat-list-title {
+    text-align: center;
+    font-family: Roboto;
+}
+
+.instruction {
+    padding-bottom: 50px;
 }
 
 .clicks-number,
@@ -23,15 +42,29 @@ body {
 }
 
 .title {
-    margin-top: 50px;
+    padding-top: 50px;
+    margin-top: 0;
     font-weight: bold;
     color: darkorange;
 }
 
+.list,
+.cat-list-title,
 .cat-name,
 .clicks,
 .instruction {
     color: white;
     font-size: 20px;
     font-family: Roboto;
+}
+
+.list:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+.cat-list-title {
+    color: darkblue;
+    text-transform: uppercase;
+    font-weight: bold;
 }
